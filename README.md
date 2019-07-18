@@ -20,3 +20,11 @@ A repo for learning typeScript. This will include testing and be based around a 
   - 2. A user can sign in & sign out
   - 3. A users messages are associated to them
   - 4. A user can only edit/delete their messages.
+
+
+### Development notes
+  - Need to remember to use scripts to assign variables to HTML elements using getElementbyID.innerHTML etc
+  - Need to assign onclick events in a similar way.
+  - REMEMBER MVC - I have been using react so much I am forgetting my architecture Basics
+            - Keep you functions and their calls in your model
+            - let your view simply handle renders!!!
