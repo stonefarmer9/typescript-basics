@@ -28,6 +28,7 @@ A repo for learning typeScript. This will include testing and be based around a 
   - REMEMBER MVC - I have been using react so much I am forgetting my architecture Basics
             - Keep you functions and their calls in your model
             - let your view simply handle renders!!!
+            - And then you remember MVC doesn't always apply to javascript so why would typescript be any more general ? 
 
 ### Learning notes
 
@@ -36,4 +37,3 @@ A repo for learning typeScript. This will include testing and be based around a 
  - Using event handlers is different, we have to declare the type by casting it using <>, e.g, <HTMLDivElement> or <HTMLInputElement> there are a few of these and complete lists are hard to come by. We should look for these frequently as needed.
  - The similarity to JS is of course high, as TS is a module/library in  a sense.
  - Declaring type does not seem to be affecting my program so far. But I need to explore the importance of setting a type to be returned and review my current fxns to see if they benefit from it.
- 
