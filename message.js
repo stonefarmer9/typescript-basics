@@ -15,5 +15,8 @@ function post(message) {
 }
 function report(message) {
     console.log("In report fxn");
-    document.getElementById("messageList").innerText = messages.toString();
+    document.getElementById("messageList").innerText = convert(messages);
+}
+function convert(list) {
+    return list.toString();
 }
