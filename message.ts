@@ -1,4 +1,6 @@
 let messages = [];
+let submitMessage = document.getElementById("submitButton")
+let messageBoard = document.getElementById("messageList")
 
 class Message {
   content: string;
@@ -7,10 +9,11 @@ class Message {
   ){
     this.message = message
   }
+}
 
-  post(message: string){
-    const newPost = new Message(message)
-    console.log(newPost.message)
-    messages.push(newPost.message)
-  }
+function post(message: string){
+  var text = (<HTMLInputElement>document.getElementById("messageInput")).value;
+  const newPost = new Message(text)
+  messages.push(newPost.message)
+  console.log(messages)
 }
