@@ -1,6 +1,4 @@
 var messages = [];
-var submitMessage = document.getElementById("submitButton");
-var messageBoard = document.getElementById("messageList");
 var Message = /** @class */ (function () {
     function Message(message) {
         this.message = message;
@@ -13,4 +11,8 @@ function post(message) {
     var newPost = new Message(text);
     messages.push(newPost.message);
     console.log(messages);
+    this.report(newPost);
+}
+function report(message) {
+    document.getElementById("messageList").innerText = messages[0];
 }
