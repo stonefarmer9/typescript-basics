@@ -1,25 +1,22 @@
 let messages = [];
 
-class Message {
-  content: string;
-  constructor(
-    public message: string
-  ){
-    this.message = message
-  }
-}
 
 function post(message: string){
   var text = (<HTMLInputElement>document.getElementById("messageInput")).value;
-  const newPost = new Message(text)
-  messages.push(newPost.message)
-  this.report(newPost)
+  console.log(text)
+  messages.push(message)
+  this.report()
 }
 
-function report(message: Message){
-  (<HTMLDivElement>document.getElementById("messageList")).innerText = convert(messages)
+function report(){
+  let list = (<HTMLElement>document.getElementById("list"))
+  list.innerHTML = convert(messages)
 }
 
-function convert(list: Array<string>): string{
-  return list.toString()
+function convert(list: Array<string>){
+  for (let messageText of list){
+    let node = (<HTMLLIElement>document.createElement('li'));
+    node.innerText = messageText;
+    return (<HTMLElement>document.getElementById("list").appendChild(node))
+  }
 }

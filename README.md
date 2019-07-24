@@ -37,3 +37,8 @@ A repo for learning typeScript. This will include testing and be based around a 
  - Using event handlers is different, we have to declare the type by casting it using <>, e.g, ```<HTMLDivElement>``` or ```<HTMLInputElement>``` there are a few of these and complete lists are hard to come by. We should look for these frequently as needed.
  - The similarity to JS is of course high, as TS is a module/library in  a sense.
  - Declaring type does not seem to be affecting my program so far. But I need to explore the importance of setting a type to be returned and review my current fxns to see if they benefit from it.
+
+
+ - After getting no where in 2 hours of work I am abandoning this project to find some more structured and fleshed out intros.
+ - I am completely unable to get anything simple moving and currently lack anyone to ask advice to. Am chasing W at makers for some tips then will start a new repo.
+ 
